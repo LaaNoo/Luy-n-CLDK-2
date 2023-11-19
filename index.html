@@ -14,15 +14,7 @@
         <button type="button" id="chuyendoi"> Chuyển đổi sang độ F</button>
         <p id="hienthi"></p>
 
-        <script>
-            chuyendoi.addEventListener("click" , function(){
-                let doC = +document.getElementById("doC").value;
-                let doF = (doC * 9 / 5 + 32);
-                document.getElementById("hienthi").innerHTML = doC + " độ c chuyển sang độ F là : " + doF;
-
-
-            })
-            
+        <script src="bai1.js">           
         </script>
  
     </div>
@@ -35,15 +27,8 @@
         <button type="button" id="chuyenFeet"> Chuyển đổi sang feet</button>
         <p id="kq"></p>
 
-        <script>
-            chuyenFeet.addEventListener("click" , function(){
-                let metM = +document.getElementById("met").value;
-                let feet = (metM * 3.2808);
-                document.getElementById("kq").innerHTML = metM + " mét chuyển sang Feet là : " + feet + " feet";
-
-
-            })
-            
+        <script src="bai2.js">
+           
         </script>
 
     </div>
@@ -56,15 +41,8 @@
         <button type="button" id="tinhS"> Tính diện tích hình vuông</button>
         <p id="ketQua"></p>
 
-        <script>
-            tinhS.addEventListener("click" , function(){
-                let canhA = +document.getElementById("canhA").value;
-                let s = Math.pow(canhA,2 );
-                document.getElementById("ketQua").innerHTML = "Hình vuông có cạnh là : " + canhA + " có diện tích là : " + s ;
-
-
-            })
-            
+        <script src="bai3.js">
+           
         </script>
     </div>
 
@@ -77,15 +55,7 @@
         <button type="button" id="chunhat"> Tính diện tích hình chữ nhật </button>
         <p id="dientichS"></p>
 
-        <script>
-            chunhat.addEventListener("click" , function(){
-                let canha = +document.getElementById("canha").value;
-                let canhb = +document.getElementById("canhb").value;
-                let dientich = canha * canhb ;
-                document.getElementById("dientichS").innerHTML = "Hình chữ nhật có 2 cạnh là : " + canha + " và " + canhb + " có diện tích là : " + dientich ;
-
-
-            })
+        <script src="bai4.js">
             
         </script>
     </div>
@@ -101,15 +71,7 @@
         <button type="button" id="tamgiac"> Tính diện tích hình tam giác vuông  </button>
         <p id="dientich"></p>
 
-        <script>
-            tamgiac.addEventListener("click" , function(){
-                let canh1 = +document.getElementById("canh1").value;
-                let canh2 = +document.getElementById("canh2").value;
-                let sTamGiac = canh1 * canh2 / 2 ;
-                document.getElementById("dientich").innerHTML = "Hình tam giác có 2 cạnh góc vuông là : " + canh1 + " và " + canh2 + " có diện tích là : " + sTamGiac ;
-
-
-            })
+        <script src="bai5.js">
             
         </script>
     </div> 
@@ -125,24 +87,7 @@
         <button type="button" id="bac1"> Giải phương trình </button>
         <p id="ketquaBac1"></p>
 
-        <script>
-            bac1.addEventListener("click" , function(){
-                let ax = +document.getElementById("ax").value;
-                let bx = +document.getElementById("bx").value;
-                let nghiemx;
-                if (ax == 0 && bx == 0){
-                    document.getElementById("ketquaBac1").innerHTML = " Phương trình bậc 1: " + ax +"x + " + bx + " = 0" + " có vô số nghiệm " ;
-                } else if (ax != 0 ){
-                    nghiemx = ((-bx) / ax);
-                    document.getElementById("ketquaBac1").innerHTML = " Phương trình bậc 1: " + ax +"x + " + bx + " = 0" + " có 1 nghiệm duy nhất: x = -b /a : x =  " + nghiemx ;
-                } else{
-                    document.getElementById("ketquaBac1").innerHTML = " Phương trình bậc 1: " + ax +"x + " + bx + " = 0" + " vô nghiệm " ;
-                }
-
-
-
-            })
-            
+        <script src="bai6.js">            
         </script>
     </div> 
 
@@ -158,30 +103,8 @@
         <button type="button" id="bac2"> Giải phương trình bậc 2  </button>
         <p id="ketquaBac2"></p>
 
-        <script>
-            bac2.addEventListener("click" , function(){
-                let aX = +document.getElementById("aX").value;
-                let bX = +document.getElementById("bX").value;
-                let cX = +document.getElementById("cX").value;
-                let denta = (Math.pow(bX,2) - (4 * aX * cX));
-                let nghiemX1;
-                let nghiemX2;
-
-                if (denta == 0){
-                    nghiemX1 = ((-bX) / (2*aX));
-                    document.getElementById("ketquaBac2").innerHTML = " Phương trình bậc 2: " + aX +"x2 + " + bX +"x + " + cX + " = 0" + " có 1 nghiệm là: " + nghiemX1;
-                } else if (denta > 0 ){
-                    nghiemX1 = (-bX + Math.sqrt(denta)) / (2*aX);
-                    nghiemX2 = (-bX - Math.sqrt(denta)) / (2*aX);
-                    document.getElementById("ketquaBac2").innerHTML = " Phương trình bậc 2: " + aX +"x2 + " + bX +"x + " + cX + " = 0" + " có 2 nghiệm x1 và x2  là: " +nghiemX1 + " và " +nghiemX2;
-                } else {
-                    document.getElementById("ketquaBac2").innerHTML = " Phương trình bậc 2: "  + aX +"x2 + " + bX +"x + " + cX + " = 0 vô nghiệm";
-                }
-
-
-
-            })
-            
+        <script src="bai7.js">
+           
         </script>
     </div> 
 
@@ -198,19 +121,7 @@
         <p id="soTuoi"></p>
         
 
-        <script>
-            ktTuoi.addEventListener("click" , function(){
-                let tuoi = +document.getElementById("tuoi").value;
-                
-                if ( 0 < tuoi && tuoi < 120){
-                    
-                    document.getElementById("soTuoi").innerHTML =  tuoi + " tuổi" + " là số tuổi của người";
-                } else {
-                    document.getElementById("soTuoi").innerHTML = tuoi + " tuổi" + " không phải là là số tuổi của người. ";
-                    
-                }
-
-            })
+        <script src="bai8.js">
             
         </script>
     </div> 
@@ -227,37 +138,7 @@
         <button type="button" id="kiemtra3"> Kiểm tra điều kiện  </button>
         <p id="tamgiac3Canh"></p>
 
-        <script>
-            kiemtra3.addEventListener("click" , function(){
-                let tamgiac1 = +document.getElementById("tamgiac1").value;
-                let tamgiac2 = +document.getElementById("tamgiac2").value;
-                let tamgiac3 = +document.getElementById("tamgiac3").value;
-
-                if (tamgiac1 > 0 && tamgiac2 > 0 && tamgiac3 > 0){
-                    let check1 = tamgiac1 +tamgiac2;
-                    if ( check1 > tamgiac3){
-                        let check2 = tamgiac2 + tamgiac3 ;
-                        if (check2 > tamgiac1){
-                            let check3 = tamgiac1 + tamgiac3;
-                            if ( check3 > tamgiac2){
-                                document.getElementById("tamgiac3Canh").innerHTML = " 3 số thực " + tamgiac1 + ", " + tamgiac2 + " và " + tamgiac3 + " là cạnh của 1 tam giác" ;
-                            } else {
-                                document.getElementById("tamgiac3Canh").innerHTML = " 3 số thực " + tamgiac1 + ", " + tamgiac2 + " và " + tamgiac3 + " không phải là cạnh của 1 tam giác" ;
-                } 
-                        } else {
-                            document.getElementById("tamgiac3Canh").innerHTML = " 3 số thực " + tamgiac1 + ", " + tamgiac2 + " và " + tamgiac3 + " không phải là cạnh của 1 tam giác" ;
-                } 
-                    } else {
-                            document.getElementById("tamgiac3Canh").innerHTML = " 3 số thực " + tamgiac1 + ", " + tamgiac2 + " và " + tamgiac3 + " không phải là cạnh của 1 tam giác" ;
-                } 
-                } else {
-                    document.getElementById("tamgiac3Canh").innerHTML = " 3 số thực " + tamgiac1 + ", " + tamgiac2 + " và " + tamgiac3 + " không phải là cạnh của 1 tam giác" ;
-                } 
-
-
-
-            })
-            
+        <script src="bai9.js">                      
         </script>
     </div> 
 
@@ -272,39 +153,43 @@
         <p id="dien"></p>
         
 
-        <script>
-            tienDien.addEventListener("click" , function(){
-                let soDien = +document.getElementById("sodien").value;
-                let tienDien;
-                                
-                if ( 0 < soDien && soDien <= 50){
-                    tienDien = soDien * 1678 ;
-                    document.getElementById("dien").innerHTML =  "Số điện của bạn là: " + soDien +". Bậc thang 1, Tiền điện của bạn là: " + tienDien + " đồng";
-                }  else if ( 50 < soDien && soDien <= 100){
-                    tienDien = soDien * 1734 ;
-                    document.getElementById("dien").innerHTML =  "Số điện của bạn là: " + soDien +". Bực thang 2, Tiền điện của bạn là: " + tienDien + " đồng";
-                } else if ( 100 < soDien && soDien <= 200){
-                    tienDien = soDien * 2014 ;
-                    document.getElementById("dien").innerHTML =  "Số điện của bạn là: " + soDien +". Bực thang 3, Tiền điện của bạn là: " + tienDien + " đồng";
-                } else if ( 200 < soDien && soDien <= 300){
-                    tienDien = soDien * 2536 ;
-                    document.getElementById("dien").innerHTML =  "Số điện của bạn là: " + soDien +". Bực thang 4, Tiền điện của bạn là: " + tienDien + " đồng";
-                } else if ( 300 < soDien && soDien <= 400){
-                    tienDien = soDien * 2834 ;
-                    document.getElementById("dien").innerHTML =  "Số điện của bạn là: " + soDien +". Bực thang 5, Tiền điện của bạn là: " + tienDien + " đồng";
-                } else {
-                    tienDien = soDien * 2927 ;
-                    document.getElementById("dien").innerHTML =  "Số điện của bạn là: " + soDien +". Bực thang 6, Tiền điện của bạn là: " + tienDien + " đồng";
-                }
-
-            })
+        <script src="bai10.js">
             
         </script>
     </div> 
 
 
     <!-- Bài 11: Viết chương trình tính thuế thu nhập cá nhân. -->
+
+    <div class="bai11">
+
+        <h2>Chương trình tính thuế thu nhập cá nhân</h2>
+
+        <input type="number" placeholder="Nhập mức lương/ tháng" id="luong">
+
+        <button type="button" id="thue"> Tính thuế</button>
+
+        <p id="manHinh"></p>
+
+        <script src="bai11.js">
+            
+        </script>
+    </div>
+
+    <!-- Bài 12:  Viết chương trình tính lãi ngân hàng khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng. -->
     
+    <div class="bai12">
+        <h2>Chương trình tính lãi ngân hàng</h2>
+
+        <input type="number" placeholder="Số tiền gửi" id="soTien">
+        <input type="number" placeholder="Lãi suất(%)" id="laiSuat">
+        <input type="number" placeholder="Thời hạn(năm)" id="thoiHan">
+        <input type="number" placeholder="Số kỳ lãi suất / năm" id="soKy">
+        <button type="button" id="tienLai"> Tính tiền lãi</button>
+        <p id="chuongTrinh"></p>
+        <script src="bai12.js">            
+        </script>
+    </div>
 
 </body>
 </html>
